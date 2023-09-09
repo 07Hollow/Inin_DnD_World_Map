@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <title>Inin yeetet euch hehe</title>
+
+    <link rel="icon" href="img/logo/d20_icon.png">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/burger-menu.css">
+    <link rel="stylesheet" href="style/map.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <script src="script/nav.js"></script>
+    <script src="script/burger-menu.js"></script>
+    <script src="script/img.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="script/jquery.mousewheel.min.js"></script>
+    <script src="script/StackOverflow.js"></script>
+
+</head>
+<body>
+<!--Nav Bar</!-->
+    <header id="nav-wrapper">
+        <nav id="nav">
+
+          <div class="nav left">
+            <span class="gradient skew"><h1 class="logo un-skew"><a href="#home"><img class="dnd_logo" src="img/logo/logo.png" alt="Dungeons & Dragons"></a></h1></span>
+            <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+          </div>
+
+          <div class="nav right">
+            <!-- <a href="#home" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a> -->
+            <a href="https://github.com/07Hollow" class="nav-link">
+                <span class="nav-link-span">
+                    <span class="nav-link-span-github-svg">
+                        <span class="u-nav">
+                            <svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a href="https://dndbeyond.com" class="nav-link"><span class="nav-link-span"><span class="u-nav">D&D Beyond</span></span></a>
+            <a href="https://roll20.net" class="nav-link"><span class="nav-link-span"><span class="u-nav">Roll20</span></span></a>
+            <a href="http://dnd5e.wikidot.com/" class="nav-link"><span class="nav-link-span"><span class="u-nav">D&D Wikidot</span></span></a>
+            <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms" class="nav-link"><span class="nav-link-span"><span class="u-nav">Forgotten Realms</span></span></a>
+
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+    
+        </section>
+        <section id="github">
+    
+        </section>
+        <section id="beyond">
+    
+        </section>
+        <section id="roll20">
+
+        </section>
+        <section id="wikidot">
+    
+        </section>
+        <section id="forgotten-realms">
+
+        </section>
+      </main>
+
+  <!-- <a class="dribbble" href="https://dribbble.com/shots/5505871-Menu-toggle-close-animation" target="_blank"><img src="https://dribbble.com/assets/logo-small-2x-9fe74d2ad7b25fba0f50168523c15fda4c35534f9ea0b1011179275383035439.png" alt=""></a> -->
+  <div id="slideContainer">
+    <div id="slide">
+      <img src="/img/map/map.jpg"></img>
+    </div>
+  </div>
+  <script>
+    var renderer = new ZoomPanRenderer("slideContainer");
+  </script>
+
+    <!--Burger menu-->
+    <div class="burger">
+      <label class="toggle">
+        <input onclick="burgerFunction()" type="checkbox">
+        <div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <svg>
+                <use xlink:href="#path">
+            </svg>
+            <svg>
+                <use xlink:href="#path">
+            </svg>
+        </div>
+      </label>      
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+            <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+        </symbol>
+      </svg>
+    </div>
+</body>
+</html>
