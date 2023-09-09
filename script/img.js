@@ -37,5 +37,4 @@ $(document).ready(function(){
     $("#slide").css("transform", 'translate3d(' + translateX + 'px, ' + translateY + 'px,0) scale(' + scale + ')').css('transition-duration', '300ms');
   });
 
-
 });
